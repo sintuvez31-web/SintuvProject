@@ -24,7 +24,7 @@ jobs:
     
     - name: Build EXE
       run: |
-        pyinstaller --onefile --noconsole --name LUBV_Injector ValornatCheat.py   # BU SATIRI DÜZELT
+        pyinstaller --onefile --noconsole --name LUBV_Injector ValornatCheat.py
     
     - name: Upload EXE
       uses: actions/upload-artifact@v4
